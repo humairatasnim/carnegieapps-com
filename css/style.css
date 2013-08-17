@@ -1,0 +1,397 @@
+sup {
+	text-transform: none;
+	font-size: 0.6em;
+}
+
+.section-title {
+	margin: 70px 0 40px 0;
+	text-align: center;
+}
+.section-title h2 {
+	font: normal 400 1.375em "PT Serif", Georgia, "Times New Roman", Times, serif;
+}
+
+.about span, .schedule span, .resources span, .contact span {
+	font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+	.section-title {
+		margin-top: 100px;
+	}
+	.section-title h2 {
+		font-size: 2.25em;
+	}
+}
+
+/* ==========================================================================
+   Main Section
+   ========================================================================== */
+
+.main {
+	border-bottom: 1px solid #999;
+	background: #000;
+	color: #FFF;
+}
+	.main .main-logo {
+		margin: 40px auto 30px auto;
+		width: 100%;
+		text-align: center;
+	}
+	.main .dates {
+		margin: 0 0 30px 0;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.125em;
+	}
+	.main .location {
+		margin: 0 0 40px 0;
+		text-align: center;
+		font-size: 1em;
+		line-height: 1.125em;		
+	}
+	.main .actions {
+		margin: 0 auto -25px auto;
+		width: 100%;
+		text-align: center;
+	}
+		.main .actions .btn {
+			display:inline-block;
+			margin: 0;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+			border-bottom-left-radius: 4px;
+			padding:15px 30px;
+			background: #F75E5E;
+			color: #FFF;
+			text-transform: uppercase;
+			text-shadow: none;
+			font: normal 700 1.125em/1.25em "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+		}
+		.main .actions .btn:hover {
+			background: #FB403E;
+		}
+
+@media only screen and (min-width: 768px) {
+	.main {
+		background: url("../img/main-background.jpg") no-repeat;
+		background-size: 120%;
+		text-shadow: #999999 1px 1px;
+	}
+		.main .dates {
+			font-size: 1.625em;
+		}
+		.main .location {
+			font-size: 1.5em;
+			line-height: 1.625em;
+		}
+		.main .actions .btn {
+			font-size: 1.5em;
+			cursor: pointer;
+		}
+}
+
+
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+
+.about {
+	padding: 0 0 50px 0;
+	background: #F9FBFB;
+}
+	.about .section-title h2 {
+		color: #F75E5E;
+	}
+	.about .info {
+		float: none;
+		text-align: left;
+	}
+		.about .info .question {
+			margin: 0 0 15px 0;
+		}
+			.about .info .question h3 {
+				text-transform: uppercase;
+				color: #777;
+				font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+				font-size: 0.875em;
+				font-weight: 700;
+			}
+		.about .info p {
+			color: #555;
+			font-size: 0.875em;
+			line-height: 1.75em;
+		}
+
+@media only screen and (min-width: 768px) {
+	.about {
+		padding: 0 0 100px 0;
+	}
+		.about .info {
+			text-align: center;
+		}
+			.about .info .question {
+				margin: 0 0 15px 0;
+			}
+			.about .info p {
+				color: #555;
+				font-size: 1em;
+				line-height: 1.875em;
+			}
+}
+
+/* ==========================================================================
+   Schedule Section
+   ========================================================================== */
+
+.schedule {
+	padding: 0 0 50px 0;
+	background: #F75E5E;
+	color: #F9FBFB;
+}
+	.schedule .section-title h2 {
+		color: #F9FBFB;
+	}
+	.schedule .info {
+		float: none;
+		margin: 40px auto;
+		text-align: left;
+	}
+		.schedule .info p {
+			font-size: 0.875em;
+			line-height: 1.75em;
+		}
+	.schedule .schedule-date {
+		margin: 0 0 20px 0;
+		text-transform: uppercase;
+	}
+	.schedule .schedule-date,
+	.schedule .time {
+		text-align: left;
+		font-weight: 600;
+	}
+	.schedule .schedule-date,
+	.schedule .time,
+	.schedule .event {
+		font-size: 0.875em;
+		line-height: 1.75em;
+	}
+
+@media only screen and (min-width: 768px) {
+	.schedule {
+		padding: 0 0 100px 0;
+	}
+		.schedule .info {
+			text-align: center;
+		}
+			.schedule .info p {
+				font-size: 1em;
+				line-height: 1.875em;
+			}
+		.schedule .time {
+			text-align: right;
+		}
+		.schedule .schedule-date,
+		.schedule .time,
+		.schedule .event {
+			font-size: 1em;
+			line-height: 1.875em;
+			margin: 0;
+		}
+}
+
+/* ==========================================================================
+   Resources Section
+   ========================================================================== */
+
+.resources {
+	padding: 0 0 50px 0;
+	background: #F9FBFB;
+}
+	.resources .section-title h2 {
+		color: #F75E5E;
+	}
+	.resources .info {
+		float: none;
+		text-align: left;
+	}
+		.resources .info p {
+			color: #555;
+			font-size: 0.875em;
+			line-height: 1.75em;
+		}
+	.resources .resource-section .resource-header {
+		font-size: 0.875em;
+		line-height: 1.75em;
+	}
+	.resources .resource-section .resource-links {
+		padding: 10px 0 0 20px;
+		font-size: 0.875em;
+		color: #999;
+	}
+	.resources .resource-section .resource-links li a {
+		color: #F75E5E;
+	}
+	.resources .resource-section .resource-links li a:hover {
+		color: #FB403E;
+	}
+
+@media only screen and (min-width: 768px) {
+	.resources {
+		padding: 0 0 100px 0;
+	}
+		.resources .info {
+			text-align: center;
+			margin: 0 0 50px 0;
+		}
+			.resources .info p {
+				color: #555;
+				font-size: 1em;
+				line-height: 1.875em;
+			}
+		.resources .resource-section {
+			margin: 0 0 30px 0;
+		}
+		.resources .resource-section .resource-header,
+		.resources .resource-section .resource-links {
+			font-size: 1em;
+			line-height: 1.875em;
+		}
+		.resources .resource-section .resource-links {
+			margin: 0;
+			padding: 0 0 0 20px;
+		}
+}
+
+/* ==========================================================================
+   Contact Section
+   ========================================================================== */
+
+.contact {
+	padding: 0 0 50px 0;
+	background: #222;
+}
+	.contact .section-title h2 {
+		color: #F75E5E;
+	}
+	.contact .info {
+		float: none;
+		text-align: left;
+		color: #F9FBFB;
+	}
+		.contact .info p {
+			font-size: 0.875em;
+			line-height: 1.75em;
+		}
+	.contact figure {
+		margin: 0;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%); /* For Webkit browsers */
+		filter: gray; /* For IE 6 - 9 */
+		-webkit-transition: all 0.4s ease; /* Fade to color for Chrome and Safari */
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility:    hidden;
+		-ms-backface-visibility:     hidden;
+	}
+	.contact figcaption {
+		padding: 10px 0;
+		background: rgba(0,0,0,0.75);
+		color: #F9FBFB;
+		text-align: center;
+		font-size: 0.75em;
+	}
+
+@media only screen and (min-width: 768px) {
+	.contact {
+		padding: 0 0 100px 0;
+	}
+		.contact .info {
+			text-align: center;
+		}
+			.contact .info p {
+				font-size: 1.125em;
+				line-height: 1.875em;
+			}
+		.contact .team li {
+			margin: 30px 0;
+		}
+		.contact figure {
+			width: 143px;
+		}
+		.contact figcaption {
+			position: absolute;
+			background: rgba(0,0,0,0.75);
+			color: #F9FBFB;
+			width: 100%;
+			opacity: 0;
+			-webkit-transition: all 0.4s ease;
+			-moz-transition:    all 0.4s ease;
+			-o-transition:      all 0.4s ease;
+		}
+		.contact figure:hover {
+			filter: grayscale(0%);
+			-webkit-filter: grayscale(0%);
+			filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility:    hidden;
+			-ms-backface-visibility:     hidden;
+		}
+		.contact figure:hover figcaption {
+			opacity: 1;
+		}
+		.contact .cap-bot:before {
+			bottom: 10px;
+			left: 10px;
+		}
+		.contact .cap-bot figcaption {
+			left: 0;
+			bottom: -30%;
+		}
+		.contact .cap-bot:hover figcaption {
+			bottom: 0;
+		}
+}
+
+/* ==========================================================================
+   Social Section
+   ========================================================================== */
+
+.social {
+	padding: 30px 0;
+	background: #F75E5E;
+	color: #F9FBFB;
+}
+	.social .stay-connected {
+		margin: 0 0 10px 0;
+	}
+	.social .stay-connected,
+	.social .social-link {
+		padding: 5px 0;
+		font-size: 0.875em;
+	}
+	.social .social-link a {
+		text-decoration: none;
+		color: #F9FBFB;
+		font-weight: 600;
+	}
+
+@media only screen and (min-width: 768px) {
+	.social {
+		padding: 15px 0;
+	}
+		.social .stay-connected {
+			margin: 0;
+		}
+		.social .stay-connected,
+		.social .social-link {
+			padding: 0;
+			font-size: 1em;
+		}
+}
