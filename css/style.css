@@ -165,8 +165,9 @@ sup {
 	.schedule .schedule-date {
 		margin: 0 0 20px 0;
 		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600;
 	}
-	.schedule .schedule-date,
 	.schedule .time {
 		text-align: left;
 		font-weight: 600;
@@ -285,27 +286,29 @@ sup {
 			line-height: 1.75em;
 		}
 	.contact figure {
-		margin: 0;
 		display: block;
 		position: relative;
 		overflow: hidden;
-		width: 100%;
-		filter: grayscale(100%);
-		-webkit-filter: grayscale(100%); /* For Webkit browsers */
-		filter: gray; /* For IE 6 - 9 */
-		-webkit-transition: all 0.4s ease; /* Fade to color for Chrome and Safari */
-		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
-		-webkit-backface-visibility: hidden;
-		-moz-backface-visibility:    hidden;
-		-ms-backface-visibility:     hidden;
+		margin: 0;
 	}
-	.contact figcaption {
-		padding: 10px 0;
-		background: rgba(0,0,0,0.75);
-		color: #F9FBFB;
-		text-align: center;
-		font-size: 0.75em;
-	}
+		.contact figure img {
+			width: 100%;
+			filter: grayscale(100%);
+			-webkit-filter: grayscale(100%); /* For Webkit browsers */
+			filter: gray; /* For IE 6 - 9 */
+			-webkit-transition: all 0.4s ease; /* Fade to color for Chrome and Safari */
+			filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility:    hidden;
+			-ms-backface-visibility:     hidden;
+		}
+		.contact figure figcaption {
+			padding: 5px 0;
+			background: rgba(0,0,0,0.75);
+			color: #999;
+			text-align: center;
+			font-size: 0.75em;
+		}
 
 @media only screen and (min-width: 768px) {
 	.contact {
@@ -321,41 +324,19 @@ sup {
 		.contact .team li {
 			margin: 30px 0;
 		}
-		.contact figure {
-			width: 143px;
+		.contact figure figcaption {
+			padding: 10px 0;
 		}
-		.contact figcaption {
-			position: absolute;
-			background: rgba(0,0,0,0.75);
-			color: #F9FBFB;
-			width: 100%;
-			opacity: 0;
-			-webkit-transition: all 0.4s ease;
-			-moz-transition:    all 0.4s ease;
-			-o-transition:      all 0.4s ease;
-		}
-		.contact figure:hover {
+		.contact figure:hover img {
 			filter: grayscale(0%);
 			-webkit-filter: grayscale(0%);
 			filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-
 			-webkit-backface-visibility: hidden;
 			-moz-backface-visibility:    hidden;
 			-ms-backface-visibility:     hidden;
 		}
 		.contact figure:hover figcaption {
-			opacity: 1;
-		}
-		.contact .cap-bot:before {
-			bottom: 10px;
-			left: 10px;
-		}
-		.contact .cap-bot figcaption {
-			left: 0;
-			bottom: -30%;
-		}
-		.contact .cap-bot:hover figcaption {
-			bottom: 0;
+			color: #F75E5E;
 		}
 }
 
