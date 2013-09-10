@@ -8,11 +8,15 @@ sup {
 	text-align: center;
 }
 .section-title h2 {
-	font: normal 400 1.375em "PT Serif", Georgia, "Times New Roman", Times, serif;
+	font: normal 300 1.375em "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-.about span, .schedule span, .resources span, .contact span {
+#section-about span, #section-schedule span, #section-resources span, #section-contact span {
 	font-weight: 600;
+}
+
+#section-about span {
+	color: #EF3B42;
 }
 
 @media only screen and (min-width: 768px) {
@@ -20,75 +24,136 @@ sup {
 		margin-top: 100px;
 	}
 	.section-title h2 {
-		font-size: 2.25em;
+		font-size: 2.5em;
 	}
 }
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.nav, .top-bar {
+	height: 70px;
+	background-color: #222 !important;
+}
+.top-bar-section ul li > a {
+	margin: 12.5px 0;
+	background-color: #222 !important;
+	color: #F9FBFB;
+	text-transform: uppercase;
+	font-size: 0.875em;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.top-bar-section ul li a:hover {
+	color: #EF3B42;
+}
+.nav-logo {
+	background:url("../img/whitelogo.png") no-repeat !important;
+	width: 140px !important;
+	height: 45px !important;
+}
+.nav-logo:hover {
+	background:url("../img/whitelogo-hover.png") no-repeat !important;
+}
+.register-nav {
+	margin: 12px 0;
+}
+	.register-nav a {
+		border-bottom-left-radius:4px;
+		border-bottom-right-radius:4px;
+		border-top-left-radius:4px;
+		border-top-right-radius:4px;
+		padding: 7px 15px;		
+		background-color:#EF3B42;
+		color: #F9FBFB;
+		font-size: 0.875em;
+		font-weight: 700;
+		text-decoration: none;
+		text-align:center;
+		text-transform: uppercase;
+	}
+	.register-nav a:hover {
+		background-color: #EE2931;
+		color: #F9FBFB;
+	}
 
 /* ==========================================================================
    Main Section
    ========================================================================== */
 
-.main {
+#section-main {
 	border-bottom: 1px solid #999;
-	background: #000;
-	color: #FFF;
+	background: #222;
+	color: #F9FBFB;
 }
-	.main .main-logo {
-		margin: 40px auto 30px auto;
+	#section-main .main-logo {
+		margin: 40px auto 20px auto;
 		width: 100%;
 		text-align: center;
 	}
-	.main .dates {
-		margin: 0 0 30px 0;
+	#section-main .dates {
+		margin: 0 0 20px 0;
 		text-align: center;
 		text-transform: uppercase;
 		font-size: 1.125em;
 	}
-	.main .location {
+	#section-main .location {
 		margin: 0 0 40px 0;
 		text-align: center;
 		font-size: 1em;
 		line-height: 1.125em;		
 	}
-	.main .actions {
+		#section-main .location a {
+			text-decoration: none;
+			color: #F9FBFB;
+		}
+		#section-main .location a:hover {
+			color: #EE3B42;
+		}
+		#section-main .location .foundicon-location {
+			font-size: 0.85em;	
+		}
+	#section-main .actions {
 		margin: 0 auto -25px auto;
 		width: 100%;
 		text-align: center;
 	}
-		.main .actions .btn {
-			display:inline-block;
+		#section-main .actions .btn {
+			display: inline-block;
 			margin: 0;
 			border-top-left-radius: 4px;
 			border-top-right-radius: 4px;
 			border-bottom-right-radius: 4px;
 			border-bottom-left-radius: 4px;
-			padding:15px 30px;
-			background: #F75E5E;
-			color: #FFF;
+			padding: 15px 30px;
+			background: #EF3B42;
+			color: #F9FBFB;
 			text-transform: uppercase;
 			text-shadow: none;
 			font: normal 700 1.125em/1.25em "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 		}
-		.main .actions .btn:hover {
-			background: #FB403E;
-		}
 
 @media only screen and (min-width: 768px) {
-	.main {
+	#section-main {
+		margin-top: -70px;
+		padding-top: 50px;
 		background: url("../img/main-background.jpg") no-repeat;
 		background-size: 120%;
-		text-shadow: #999999 1px 1px;
 	}
-		.main .dates {
+		#section-main .dates {
 			font-size: 1.625em;
 		}
-		.main .location {
+		#section-main .location {
 			font-size: 1.5em;
 			line-height: 1.625em;
 		}
-		.main .actions .btn {
+		#section-main .actions .btn {
 			font-size: 1.5em;
 			cursor: pointer;
+		}
+		#section-main .actions .btn:hover {
+			background: #EE2931;
 		}
 }
 
@@ -97,45 +162,48 @@ sup {
    About Section
    ========================================================================== */
 
-.about {
+#section-about {
 	padding: 0 0 50px 0;
 	background: #F9FBFB;
 }
-	.about .section-title h2 {
-		color: #F75E5E;
+	#section-about .section-title h2 {
+		color: #EF3B42;
 	}
-	.about .info {
+	#section-about .info {
 		float: none;
 		text-align: left;
 	}
-		.about .info .question {
-			margin: 0 0 15px 0;
+		#section-about .info .question {
+			margin: 0 0 20px 0;
 		}
-			.about .info .question h3 {
+			#section-about .info .question h3 {
 				text-transform: uppercase;
 				color: #777;
 				font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 				font-size: 0.875em;
-				font-weight: 700;
+				font-weight: 600;
+				letter-spacing: 1px;
 			}
-		.about .info p {
+		#section-about .info p {
 			color: #555;
 			font-size: 0.875em;
 			line-height: 1.75em;
 		}
 
 @media only screen and (min-width: 768px) {
-	.about {
+	#section-about {
 		padding: 0 0 100px 0;
 	}
-		.about .info {
+		#section-about .info {
 			text-align: center;
 		}
-			.about .info .question {
+			#section-about .info .question {
 				margin: 0 0 15px 0;
 			}
-			.about .info p {
-				color: #555;
+				#section-about .info .question h3 {
+					font-size: 1em;
+				}
+			#section-about .info p {
 				font-size: 1em;
 				line-height: 1.875em;
 			}
@@ -145,57 +213,56 @@ sup {
    Schedule Section
    ========================================================================== */
 
-.schedule {
+#section-schedule {
 	padding: 0 0 50px 0;
-	background: #F75E5E;
+	background: #EF3B42;
 	color: #F9FBFB;
 }
-	.schedule .section-title h2 {
+	#section-schedule .section-title h2 {
 		color: #F9FBFB;
 	}
-	.schedule .info {
+	#section-schedule .info {
 		float: none;
 		margin: 40px auto;
 		text-align: left;
 	}
-		.schedule .info p {
+		#section-schedule .info p {
 			font-size: 0.875em;
 			line-height: 1.75em;
 		}
-	.schedule .schedule-date {
+	#section-schedule #section-schedule-date {
 		margin: 0 0 20px 0;
 		text-transform: uppercase;
 		text-align: center;
-		font-weight: 600;
 	}
-	.schedule .time {
+	#section-schedule .time {
 		text-align: left;
-		font-weight: 600;
 	}
-	.schedule .schedule-date,
-	.schedule .time,
-	.schedule .event {
+	#section-schedule #section-schedule-date,
+	#section-schedule .time,
+	#section-schedule .event {
 		font-size: 0.875em;
 		line-height: 1.75em;
+				font-weight: 600;
 	}
 
 @media only screen and (min-width: 768px) {
-	.schedule {
+	#section-schedule {
 		padding: 0 0 100px 0;
 	}
-		.schedule .info {
+		#section-schedule .info {
 			text-align: center;
 		}
-			.schedule .info p {
+			#section-schedule .info p {
 				font-size: 1em;
 				line-height: 1.875em;
 			}
-		.schedule .time {
+		#section-schedule .time {
 			text-align: right;
 		}
-		.schedule .schedule-date,
-		.schedule .time,
-		.schedule .event {
+		#section-schedule #section-schedule-date,
+		#section-schedule .time,
+		#section-schedule .event {
 			font-size: 1em;
 			line-height: 1.875em;
 			margin: 0;
@@ -206,62 +273,70 @@ sup {
    Resources Section
    ========================================================================== */
 
-.resources {
+#section-resources {
 	padding: 0 0 50px 0;
 	background: #F9FBFB;
 }
-	.resources .section-title h2 {
-		color: #F75E5E;
+	#section-resources .section-title h2 {
+		color: #EF3B42;
 	}
-	.resources .info {
+	#section-resources .info {
 		float: none;
 		text-align: left;
 	}
-		.resources .info p {
+		#section-resources .info p {
 			color: #555;
 			font-size: 0.875em;
 			line-height: 1.75em;
 		}
-	.resources .resource-section .resource-header {
+	#section-resources .resource-section .resource-header {
 		font-size: 0.875em;
 		line-height: 1.75em;
 	}
-	.resources .resource-section .resource-links {
-		padding: 10px 0 0 20px;
+	#section-resources .resource-section .resource-links {
+		list-style: none;
+		padding: 10px 0 0 0;
 		font-size: 0.875em;
 		color: #999;
 	}
-	.resources .resource-section .resource-links li a {
-		color: #F75E5E;
+	#section-resources .resource-section .resource-links li a {
+		color: #EF3B42;
 	}
-	.resources .resource-section .resource-links li a:hover {
-		color: #FB403E;
+	#section-resources .resource-section .resource-links li a:hover {
+		color: #EE2931;
+		border-bottom-color: #F69699;
+		border-bottom-style: solid;
+		border-bottom-width: 0.07em;
+	}
+	#section-resources .resource-section .resource-links .format {
+		font-size: 0.75em;
+		font-weight: 300;
 	}
 
 @media only screen and (min-width: 768px) {
-	.resources {
+	#section-resources {
 		padding: 0 0 100px 0;
 	}
-		.resources .info {
+		#section-resources .info {
 			text-align: center;
 			margin: 0 0 50px 0;
 		}
-			.resources .info p {
+			#section-resources .info p {
 				color: #555;
 				font-size: 1em;
 				line-height: 1.875em;
 			}
-		.resources .resource-section {
+		#section-resources .resource-section {
 			margin: 0 0 30px 0;
 		}
-		.resources .resource-section .resource-header,
-		.resources .resource-section .resource-links {
+		#section-resources .resource-section .resource-header,
+		#section-resources .resource-section .resource-links {
 			font-size: 1em;
 			line-height: 1.875em;
 		}
-		.resources .resource-section .resource-links {
+		#section-resources .resource-section .resource-links {
 			margin: 0;
-			padding: 0 0 0 20px;
+			padding: 0;
 		}
 }
 
@@ -269,29 +344,35 @@ sup {
    Contact Section
    ========================================================================== */
 
-.contact {
-	padding: 0 0 50px 0;
+#section-contact {
+	padding: 0 0 20px 0;
 	background: #222;
 }
-	.contact .section-title h2 {
-		color: #F75E5E;
+	#section-contact .section-title h2 {
+		color: #EF3B42;
 	}
-	.contact .info {
+	#section-contact .info {
 		float: none;
 		text-align: left;
 		color: #F9FBFB;
 	}
-		.contact .info p {
+		#section-contact .info p {
 			font-size: 0.875em;
 			line-height: 1.75em;
 		}
-	.contact figure {
+	#section-contact figure {
 		display: block;
 		position: relative;
 		overflow: hidden;
 		margin: 0;
+		border-bottom-left-radius:4px;
+		border-bottom-right-radius:4px;
+		border-top-left-radius:4px;
+		border-top-right-radius:4px;
 	}
-		.contact figure img {
+		#section-contact figure img {
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
 			width: 100%;
 			filter: grayscale(100%);
 			-webkit-filter: grayscale(100%); /* For Webkit browsers */
@@ -302,7 +383,7 @@ sup {
 			-moz-backface-visibility:    hidden;
 			-ms-backface-visibility:     hidden;
 		}
-		.contact figure figcaption {
+		#section-contact figure figcaption {
 			padding: 5px 0;
 			background: rgba(0,0,0,0.75);
 			color: #999;
@@ -311,23 +392,24 @@ sup {
 		}
 
 @media only screen and (min-width: 768px) {
-	.contact {
-		padding: 0 0 100px 0;
+	#section-contact {
+		padding: 0 0 50px 0;
 	}
-		.contact .info {
+		#section-contact .info {
 			text-align: center;
 		}
-			.contact .info p {
+			#section-contact .info p {
 				font-size: 1.125em;
 				line-height: 1.875em;
 			}
-		.contact .team li {
+		#section-contact .team li {
 			margin: 30px 0;
 		}
-		.contact figure figcaption {
+		#section-contact figure figcaption {
 			padding: 10px 0;
+			font-size: 0.875em;
 		}
-		.contact figure:hover img {
+		#section-contact figure:hover img {
 			filter: grayscale(0%);
 			-webkit-filter: grayscale(0%);
 			filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
@@ -335,8 +417,8 @@ sup {
 			-moz-backface-visibility:    hidden;
 			-ms-backface-visibility:     hidden;
 		}
-		.contact figure:hover figcaption {
-			color: #F75E5E;
+		#section-contact figure:hover figcaption {
+			color: #EF3B42;
 		}
 }
 
@@ -344,34 +426,34 @@ sup {
    Social Section
    ========================================================================== */
 
-.social {
+#section-social {
 	padding: 30px 0;
-	background: #F75E5E;
+	background: #EF3B42;
 	color: #F9FBFB;
 }
-	.social .stay-connected {
+	#section-social .stay-connected {
 		margin: 0 0 10px 0;
 	}
-	.social .stay-connected,
-	.social .social-link {
+	#section-social .stay-connected,
+	#section-social .social-link {
 		padding: 5px 0;
 		font-size: 0.875em;
 	}
-	.social .social-link a {
+	#section-social .social-link a {
 		text-decoration: none;
 		color: #F9FBFB;
 		font-weight: 600;
 	}
 
 @media only screen and (min-width: 768px) {
-	.social {
+	#section-social {
 		padding: 15px 0;
 	}
-		.social .stay-connected {
+		#section-social .stay-connected {
 			margin: 0;
 		}
-		.social .stay-connected,
-		.social .social-link {
+		#section-social .stay-connected,
+		#section-social .social-link {
 			padding: 0;
 			font-size: 1em;
 		}
